@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Mountains+of+Christmas:wght@700&display=swap');
+body{
+  margin: 0;
+}
+#container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  color: beige;
+  margin: 0;
+  font-size: 100px;
+  font-family: 'Mountains of Christmas', serif;
+}
+.snow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(snowflake.png);
+  background-size: cover;
+  animation: aniSnow 4s ease-in-out infinite; 
+}
+@keyframes aniSnow{
+  /* vị trí bắt đầu 0% */
+  0%{
+    transform: translate(0,0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translate(100px, 50vh);
+  }
+}
